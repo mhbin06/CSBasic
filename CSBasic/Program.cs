@@ -17,6 +17,12 @@ namespace CSBasic
             int a = 2000000000;     // 20억
             int b = 1000000000;     // 10억
             Console.WriteLine(a + b);
+
+            //오버플로우 연습2
+            Console.WriteLine((long)a + b);
+            //작은 타입이 큰 타입으로 변환되어 30억출력이 가능해짐
+            Console.WriteLine(a + (long)b);
+            Console.WriteLine((long)a + (long)b);
         }
     }
 }
